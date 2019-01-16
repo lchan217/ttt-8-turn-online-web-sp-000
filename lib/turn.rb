@@ -36,7 +36,7 @@ def turn(board)
   response_index = input_to_index(answer)
   
   counter = 0
-  until valid_move?(board,response_index) == true
+  until valid_move?(board,response_index)
     puts "This is not valid"
     counter+=1
     turn(board)
