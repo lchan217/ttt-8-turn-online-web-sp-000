@@ -39,4 +39,5 @@ def turn(board)
   else 
     "This is not valid"
     turn(board)
+  end
 end
