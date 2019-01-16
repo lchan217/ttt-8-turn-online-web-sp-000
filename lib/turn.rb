@@ -34,8 +34,11 @@ def turn(board)
   puts "Please enter 1-9:"
   answer = gets.strip
   response_index = input_to_index(answer)
-  if valid_move?(board,response_index) == true
-    display_board(board=[])
-  else 
+  
+  counter = 0
+  until valid_move?(board,response_index) == true
+    puts "This is not valid"
+    counter+=1
+    turn(board)
   end
 end
