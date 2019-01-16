@@ -34,7 +34,7 @@ def turn(board)
   puts "Please enter 1-9:"
   answer = gets.strip
   response_index = input_to_index(answer)
-  if valid_move?(board,response_index) == true
+  if valid_move?(board,response_index)
     move(board,response_index,value="X")
     display_board(board=[])
   else 
