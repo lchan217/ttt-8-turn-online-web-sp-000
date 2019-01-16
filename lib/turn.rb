@@ -35,4 +35,8 @@ def turn(board)
   answer = gets.strip
   response_index = input_to_index(answer)
   if valid_move(board,response_index) 
+    display_board(board=[])
+  else 
+    "This is not valid"
+    turn(board)
 end
