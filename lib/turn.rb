@@ -37,7 +37,7 @@ def turn(board)
   if valid_move(board,response_index) 
     display_board(board=[])
   else 
-    "This is not valid"
+    puts "This is not valid"
     turn(board)
   end
 end
