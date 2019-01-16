@@ -36,9 +36,9 @@ def turn(board)
   response_index = input_to_index(answer)
   if valid_move?(board,response_index)
     move(board,response_index,value="X")
-    display_board(board=[])
   else 
     puts "This is not valid"
     turn(board)
   end
+   display_board(board=[])
 end
