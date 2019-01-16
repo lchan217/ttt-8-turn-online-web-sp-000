@@ -40,5 +40,5 @@ def turn(board)
     puts "This is not valid"
     turn(board)
   end
-   display_board(board=[])
+   display_board(board)
 end
